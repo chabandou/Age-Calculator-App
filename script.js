@@ -41,11 +41,13 @@ const validateDates = () => {
     setError(bYear, "Must be in the past");
   } else if (bYear.value === "") {
     setError(bYear, "This field is required");
+  } else if (inputYear <= 0) {
+    setError(bYear, "Must be a valid year");
   } else {
     setSuccess(bYear);
   }
 
-  if (inputMonth > 12 || inputMonth === 0) {
+  if (inputMonth > 12 || inputMonth <= 0) {
     setError(bMonth, "Must be a valid month");
   } else if (bMonth.value === "") {
     setError(bMonth, "This field is required");
@@ -80,7 +82,7 @@ const validateDates = () => {
 
   if (bDay.value === "") {
     setError(bDay, "This field is required");
-  } else if (inputDay === 0) {
+  } else if (inputDay <= 0) {
     setError(bDay, "Must be a valid day");
   } else if (inputDay > 31) {
     setError(bDay, "Must be a valid day");
