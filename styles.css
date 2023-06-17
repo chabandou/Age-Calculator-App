@@ -216,17 +216,9 @@ body {
 
   .container {
     width: 95%;
-    max-width: 95%;
+    /* max-width: 95%; */
     padding: 5%;
   }
-
-  /* .age-input-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    max-width: 90%;
-    border-bottom: 1px solid hsl(0, 0%, 54%);
-  } */
   
   .age-input-container > div {
     max-width: auto;
@@ -254,7 +246,7 @@ body {
   }
 
   .arrow {
-    right: 45%;
+    right: 42.5%;
     top: 38%;
   }
 }
